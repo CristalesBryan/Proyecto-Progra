@@ -1,0 +1,16 @@
+com\mycompany\proyectobiblioteca\FxMenuController.class
+Clases\CLogin.class
+com\mycompany\proyectobiblioteca\FxPrestamosController.class
+com\mycompany\proyectobiblioteca\FxLoginController.class
+com\mycompany\proyectobiblioteca\FxHistorialUsuarioController.class
+Clases\CDevoluciones.class
+Clases\CLibros.class
+Clases\CPrestamos.class
+com\mycompany\proyectobiblioteca\FxLibrosController.class
+module-info.class
+Clases\CUsuarios.class
+com\mycompany\proyectobiblioteca\FxUsuariosController.class
+Clases\CConexion.class
+Clases\CHistorialUsuario.class
+com\mycompany\proyectobiblioteca\App.class
+com\mycompany\proyectobiblioteca\FxDevolucionesController.class

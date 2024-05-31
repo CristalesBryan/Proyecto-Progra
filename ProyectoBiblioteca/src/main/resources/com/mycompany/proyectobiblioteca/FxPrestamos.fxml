@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectobiblioteca.FxPrestamosController">
+   <children>
+      <Pane layoutX="-1.0" prefHeight="400.0" prefWidth="949.0" style="-fx-background-color: #84b6f4;">
+         <children>
+            <Pane layoutX="14.0" layoutY="14.0" prefHeight="373.0" prefWidth="365.0" style="-fx-border-color: black;">
+               <children>
+                  <Button layoutX="95.0" layoutY="291.0" mnemonicParsing="false" onAction="#prestarLibro" text="Realizar Prestamo" />
+                  <Button layoutX="245.0" layoutY="334.0" mnemonicParsing="false" onAction="#showFxMenu" text="Regresar al menú" />
+                  <Label layoutX="14.0" layoutY="91.0" text="Fecha de Prestamo realizado:" />
+                  <DatePicker fx:id="datefecha_prestamo" layoutX="183.0" layoutY="87.0" />
+                  <Label layoutX="14.0" layoutY="45.0" text="Ingrese su identificacion:" />
+                  <TextField fx:id="txtidentificacion" layoutX="150.0" layoutY="41.0" />
+               </children>
+            </Pane>
+            <TableView fx:id="tblibrosPrestamo" layoutX="389.0" layoutY="14.0" onMouseClicked="#seleccionarLibros" prefHeight="373.0" prefWidth="535.0" />
+            <Label layoutX="24.0" layoutY="24.0" text="ISBN:" />
+            <TextField fx:id="txtisbn" layoutX="126.0" layoutY="20.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

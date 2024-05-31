@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="429.0" prefWidth="1164.0" style="-fx-background-color: #d06aff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectobiblioteca.FxDevolucionesController">
+   <children>
+      <Pane layoutX="14.0" layoutY="12.0" prefHeight="406.0" prefWidth="421.0" style="-fx-border-color: black;">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Isbn del Libro prestado:" />
+            <TextField fx:id="txtisbn" layoutX="153.0" layoutY="10.0" prefHeight="25.0" prefWidth="117.0" />
+            <Label layoutX="14.0" layoutY="59.0" text="Identificacion del Usuario:" />
+            <TextField fx:id="txtidentificacion" layoutX="153.0" layoutY="55.0" prefHeight="25.0" prefWidth="117.0" />
+            <Label layoutX="14.0" layoutY="106.0" text="Ingrese la fecha de la devolucion:" />
+            <DatePicker fx:id="datefecha_Devolucion" layoutX="195.0" layoutY="102.0" prefHeight="25.0" prefWidth="162.0" />
+            <Button layoutX="16.0" layoutY="260.0" mnemonicParsing="false" onAction="#devolverLibro" text="Realizar Devolucion" />
+            <Button layoutX="224.0" layoutY="260.0" mnemonicParsing="false" text="Consultar Prestamos" />
+            <Button layoutX="349.0" layoutY="367.0" mnemonicParsing="false" onAction="#showFxMenu" text="Regresar" />
+            <Button layoutX="14.0" layoutY="367.0" mnemonicParsing="false" text="Historial de devoluciones" />
+         </children>
+      </Pane>
+      <TableView fx:id="tblibrosDevolucion" layoutX="455.0" layoutY="12.0" prefHeight="406.0" prefWidth="695.0" />
+   </children>
+</AnchorPane>
